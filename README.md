@@ -3,23 +3,25 @@ TTN-based luftdaten.info implementation at Beuth Hochschule Berlin for the PLZN 
 
 ## General information
 This project is assembled from Thomas Telkamp and Matthijs Kooijman LMIC ABP example code, the Adafruit BME280 example code,
-the modified SDS library from ricki-z ([Link](https://github.com/ricki-z/SDS011/issues/21#issuecomment-479877991)) and code from the iot-basel ttn sensor code ([Link](https://github.com/urs8000/particulate-matter_ESP32_SDS011_BME280_DHT22/blob/d78dbddb301234c87b0af3198f2cb772874cb64d/particulate_matter_ESP32-DOIT_SDS011_BME280_DHT22_ABP.ino#L102)).\
-__The last code could have been used completely but I was already done when I found it.__
+the modified SDS library from ricki-z ([Link](https://github.com/ricki-z/SDS011/issues/21#issuecomment-479877991)) and code from the iot-basel TTN sensor ([Link](https://github.com/urs8000/particulate-matter_ESP32_SDS011_BME280_DHT22/blob/d78dbddb301234c87b0af3198f2cb772874cb64d/particulate_matter_ESP32-DOIT_SDS011_BME280_DHT22_ABP.ino#L102)).\
+__The last code could have been used completely and adapted but I was already mostly done when I found it.__
 
-## Pinout and schematic
+## Pinout
+![Pinout](Heltec_WiFi_LoRa_32_v1_Pinout.jpg)
 * 16 -> TX(SDS)
 * 17 -> RX(SDS)
 * 21 -> SDA
 * 22 -> SCL
 
+## Schematic
 ![Schematic](schematic.png)
 
 ## Libraries
-Add the supllied libraries to your Arduino IDE library folder and install the ESP32 board from the boardmanager and select "Heltec LoRa Wifi 32".
+Add the supplied libraries to your Arduino IDE library folder and install the ESP32 board from the boardmanager and select "Heltec LoRa Wifi 32".
 
 ## Hardware
 Hardware used in this project:
-* Heltec Wifi LoRa 32
+* Heltec Wifi LoRa 32 v1
 * Nova Fitness SDS011
 * BME280 I²C
 * jumper cables
